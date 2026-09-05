@@ -14,10 +14,10 @@ except ImportError:
 
 phone = "999999999999"   # Replace with the recipient's phone number and country code (e.g., 15551234567 for +1 555-123-4567) 
 
-messages = [
+messages = [             #You can write your own custom msg here
     "HEY 👀",
     "Are you alive?",
-    "BROOOO 😂",
+    "BROOOO 😂",    
     "Reply kar 😭",
     "HELLOOOOO",
     "Hey bro 😂 This message was prepared using Python! #{}",
@@ -31,7 +31,7 @@ print("Waiting for WhatsApp Web to load...")
 time.sleep(12)          # increase if your internet is slow
 
 # 2. Send messages in the same tab
-for i in range(1, 3):   # start with only 3 messages for testing
+for i in range(1, 3):   # start with only 3 messages for testing after wards you can change it
     message = random.choice(messages)
     
     if "{}" in message:
